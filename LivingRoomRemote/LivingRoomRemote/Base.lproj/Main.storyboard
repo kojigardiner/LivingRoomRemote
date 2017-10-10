@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Book</string>
+            <string>Avenir-Heavy</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--MainVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="LivingRoomRemote" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="pZD-pc-0RA">
+                                <rect key="frame" x="27.5" y="144.5" width="320" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZFN-8C-l91" customClass="RoundedCornerButton" customModule="LivingRoomRemote" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                        <color key="backgroundColor" red="0.28995765559999997" green="0.28995765559999997" blue="0.28995765559999997" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="BQt-bj-Tdk"/>
+                                            <constraint firstAttribute="width" constant="80" id="fCF-gm-Raf"/>
+                                        </constraints>
+                                        <state key="normal" image="TV-White"/>
+                                        <connections>
+                                            <action selector="tvOnButtonWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g6Y-P1-q11"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LBj-Pb-dII" customClass="RoundedCornerButton" customModule="LivingRoomRemote" customModuleProvider="target">
+                                        <rect key="frame" x="120" y="0.0" width="80" height="80"/>
+                                        <color key="backgroundColor" red="0.28995765556538766" green="0.28995765556538766" blue="0.28995765556538766" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="DIh-H1-qAb"/>
+                                            <constraint firstAttribute="height" constant="80" id="Pds-pf-I01"/>
+                                        </constraints>
+                                        <state key="normal" image="AppleTV-White"/>
+                                        <connections>
+                                            <action selector="appleTvOnButtonWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QCW-hR-6fa"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KgS-7U-Syr" customClass="RoundedCornerButton" customModule="LivingRoomRemote" customModuleProvider="target">
+                                        <rect key="frame" x="240" y="0.0" width="80" height="80"/>
+                                        <color key="backgroundColor" red="0.28995765556538766" green="0.28995765556538766" blue="0.28995765556538766" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="2Kk-Ta-UJo"/>
+                                            <constraint firstAttribute="width" constant="80" id="BFx-UY-FFe"/>
+                                        </constraints>
+                                        <state key="normal" image="Game-White"/>
+                                        <connections>
+                                            <action selector="gameOnButtonWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="79G-sY-N3k"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maji Living Room Remote" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ktf-DG-8ip">
+                                <rect key="frame" x="37.5" y="40" width="300.5" height="34.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="KSj-BF-4Bo">
+                                <rect key="frame" x="42" y="617" width="291" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ko5-Fh-2U3" customClass="RoundedCornerButton" customModule="LivingRoomRemote" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                        <color key="backgroundColor" red="0.28995765559999997" green="0.28995765559999997" blue="0.28995765559999997" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="jwS-R8-SMS"/>
+                                            <constraint firstAttribute="width" constant="40" id="pSI-Mc-1W3"/>
+                                        </constraints>
+                                        <state key="normal" image="Refresh-White"/>
+                                        <connections>
+                                            <action selector="refreshButtonWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rtC-QC-7gY"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not Connected" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xjb-J8-Egs">
+                                        <rect key="frame" x="90" y="0.0" width="111" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="111" id="aZH-WB-MCu"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
+                                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dtO-zF-Ihy" customClass="RoundedCornerButton" customModule="LivingRoomRemote" customModuleProvider="target">
+                                        <rect key="frame" x="251" y="0.0" width="40" height="40"/>
+                                        <color key="backgroundColor" red="0.28995765559999997" green="0.28995765559999997" blue="0.28995765559999997" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="0Na-ZW-0Oh"/>
+                                            <constraint firstAttribute="width" constant="40" id="GPP-O1-MZ8"/>
+                                        </constraints>
+                                        <state key="normal" image="Shutdown-White"/>
+                                        <connections>
+                                            <action selector="shutdownButtonWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DAn-Hl-EIX"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="hA5-Mo-aDQ">
+                                <rect key="frame" x="0.0" y="344.5" width="375" height="217.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="NsT-Pj-tHd">
+                                        <rect key="frame" x="0.0" y="0.0" width="136.5" height="217.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I3c-El-3zy">
+                                                <rect key="frame" x="0.0" y="0.0" width="136.5" height="107.5"/>
+                                                <color key="backgroundColor" red="0.28995765559999997" green="0.28995765559999997" blue="0.28995765559999997" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                                <state key="normal" title="Play">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="playButtonWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Usw-8v-M9N"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dxF-gz-qyW">
+                                                <rect key="frame" x="0.0" y="110.5" width="136.5" height="107"/>
+                                                <color key="backgroundColor" red="0.28995765559999997" green="0.28995765559999997" blue="0.28995765559999997" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                                <state key="normal" title="Menu">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="menuButtonWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WOq-nU-oPp"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2R-Ih-xyB">
+                                        <rect key="frame" x="139.5" y="0.0" width="235.5" height="217.5"/>
+                                        <color key="backgroundColor" red="0.28995765556538766" green="0.28995765556538766" blue="0.28995765556538766" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <gestureRecognizers/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <state key="normal" title="Touchpad">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="touchpadButtonWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZWp-lL-GEg"/>
+                                            <outletCollection property="gestureRecognizers" destination="pD3-NY-Eej" appends="YES" id="ghA-Wf-cSW"/>
+                                            <outletCollection property="gestureRecognizers" destination="L2y-BU-E9O" appends="YES" id="hNP-XR-a9l"/>
+                                            <outletCollection property="gestureRecognizers" destination="5CA-mR-V1i" appends="YES" id="xas-7f-6rL"/>
+                                            <outletCollection property="gestureRecognizers" destination="7ev-Fn-Xtm" appends="YES" id="Jmd-jg-5gx"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="NPx-nt-ECz">
+                                <rect key="frame" x="20" y="572" width="335" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="M3Z-FP-mIv"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert"/>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="QkT-tz-QXG">
+                                <rect key="frame" x="114" y="94.5" width="147" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="zYo-dM-Y2J"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Turn On"/>
+                                    <segment title="Switch To"/>
+                                </segments>
+                                <color key="tintColor" red="0.95294117649999999" green="0.95294117649999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="segmentedControlValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="kvN-Dn-1Vb"/>
+                                </connections>
+                            </segmentedControl>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="a1P-3x-7Gl">
+                                <rect key="frame" x="27.5" y="144.5" width="320" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TIJ-kM-Ebc" customClass="RoundedCornerButton" customModule="LivingRoomRemote" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                        <color key="backgroundColor" red="0.28995765556538766" green="0.28995765556538766" blue="0.28995765556538766" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="6fs-PZ-bya"/>
+                                            <constraint firstAttribute="width" constant="80" id="Y6O-dG-cFU"/>
+                                        </constraints>
+                                        <state key="normal" image="TV-Color-Fill"/>
+                                        <connections>
+                                            <action selector="tvSwitchButtonWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ise-Dp-rzM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0yK-eA-7So" customClass="RoundedCornerButton" customModule="LivingRoomRemote" customModuleProvider="target">
+                                        <rect key="frame" x="120" y="0.0" width="80" height="80"/>
+                                        <color key="backgroundColor" red="0.28995765556538766" green="0.28995765556538766" blue="0.28995765556538766" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="DsS-d9-s1L"/>
+                                            <constraint firstAttribute="width" constant="80" id="nLX-YP-UJ4"/>
+                                        </constraints>
+                                        <state key="normal" image="AppleTV-Color-Fill"/>
+                                        <connections>
+                                            <action selector="appleTvSwitchButtonWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GUM-dL-ZuO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="auz-uh-wPp" customClass="RoundedCornerButton" customModule="LivingRoomRemote" customModuleProvider="target">
+                                        <rect key="frame" x="240" y="0.0" width="80" height="80"/>
+                                        <color key="backgroundColor" red="0.28995765556538766" green="0.28995765556538766" blue="0.28995765556538766" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="WQA-By-Fc5"/>
+                                            <constraint firstAttribute="width" constant="80" id="pEf-nN-SN9"/>
+                                        </constraints>
+                                        <state key="normal" image="Game-Color-Fill"/>
+                                        <connections>
+                                            <action selector="gameSwitchButtonWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="swR-Na-zs6"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="Mr1-1y-7aB">
+                                <rect key="frame" x="27.5" y="244.5" width="320" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oxf-qC-tTT" customClass="RoundedCornerButton" customModule="LivingRoomRemote" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                        <color key="backgroundColor" red="0.28995765556538766" green="0.28995765556538766" blue="0.28995765556538766" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="JRW-lC-X60"/>
+                                            <constraint firstAttribute="height" constant="80" id="ggm-zg-dmE"/>
+                                        </constraints>
+                                        <state key="normal" image="VolumeMute-White"/>
+                                        <connections>
+                                            <action selector="volumeMuteButtonWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6nB-nz-sxb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rTP-AC-eCc" customClass="RoundedCornerButton" customModule="LivingRoomRemote" customModuleProvider="target">
+                                        <rect key="frame" x="120" y="0.0" width="80" height="80"/>
+                                        <color key="backgroundColor" red="0.28995765556538766" green="0.28995765556538766" blue="0.28995765556538766" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="6hu-5Q-bW1"/>
+                                            <constraint firstAttribute="height" constant="80" id="gNL-he-W72"/>
+                                        </constraints>
+                                        <state key="normal" image="VolumeDown-White"/>
+                                        <connections>
+                                            <action selector="volumeDownButtonWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u7B-oi-Slf"/>
+                                            <outletCollection property="gestureRecognizers" destination="0bE-84-lek" appends="YES" id="8Tj-ab-2PH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZJa-Hn-7fh" customClass="RoundedCornerButton" customModule="LivingRoomRemote" customModuleProvider="target">
+                                        <rect key="frame" x="240" y="0.0" width="80" height="80"/>
+                                        <color key="backgroundColor" red="0.28995765556538766" green="0.28995765556538766" blue="0.28995765556538766" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="7NB-cA-Ou2"/>
+                                            <constraint firstAttribute="height" constant="80" id="Ogr-Ve-yAT"/>
+                                        </constraints>
+                                        <state key="normal" image="VolumeUp-White"/>
+                                        <connections>
+                                            <action selector="volumeUpButtonWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Dv-G5-8wR"/>
+                                            <outletCollection property="gestureRecognizers" destination="UBL-30-Fqb" appends="YES" id="Ajy-4A-arV"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rb7-5n-wnf">
+                                <rect key="frame" x="7" y="46" width="22" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="testButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ag2-hN-5oF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KSj-BF-4Bo" firstAttribute="top" secondItem="NPx-nt-ECz" secondAttribute="bottom" constant="10" id="3CK-b2-vwW"/>
+                            <constraint firstItem="a1P-3x-7Gl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3GD-S6-XbL"/>
+                            <constraint firstItem="pZD-pc-0RA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4FP-SL-aSV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NPx-nt-ECz" secondAttribute="trailing" constant="20" id="94U-Ux-Ts0"/>
+                            <constraint firstItem="NPx-nt-ECz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cps-6W-etI"/>
+                            <constraint firstItem="KSj-BF-4Bo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="E23-9L-SE1"/>
+                            <constraint firstItem="Mr1-1y-7aB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HJD-wF-yOl"/>
+                            <constraint firstItem="pZD-pc-0RA" firstAttribute="top" secondItem="QkT-tz-QXG" secondAttribute="bottom" constant="20" id="IDb-ee-8WK"/>
+                            <constraint firstItem="Ktf-DG-8ip" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Wfp-cv-0wm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KSj-BF-4Bo" secondAttribute="bottom" constant="10" id="ZQF-Ig-kk3"/>
+                            <constraint firstItem="QkT-tz-QXG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a5z-LQ-T8J"/>
+                            <constraint firstItem="a1P-3x-7Gl" firstAttribute="top" secondItem="QkT-tz-QXG" secondAttribute="bottom" constant="20" id="cub-jj-11X"/>
+                            <constraint firstItem="Ktf-DG-8ip" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eTf-Ai-d6S"/>
+                            <constraint firstItem="QkT-tz-QXG" firstAttribute="top" secondItem="Ktf-DG-8ip" secondAttribute="bottom" constant="20" id="fre-Jg-fgf"/>
+                            <constraint firstItem="NPx-nt-ECz" firstAttribute="top" secondItem="hA5-Mo-aDQ" secondAttribute="bottom" constant="10" id="itk-dS-IpN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hA5-Mo-aDQ" secondAttribute="trailing" id="kCu-Fo-eet"/>
+                            <constraint firstItem="hA5-Mo-aDQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lXu-Rm-l7Q"/>
+                            <constraint firstItem="hA5-Mo-aDQ" firstAttribute="top" secondItem="Mr1-1y-7aB" secondAttribute="bottom" constant="20" id="mrS-K6-54o"/>
+                            <constraint firstItem="NPx-nt-ECz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="qim-dU-Irs"/>
+                            <constraint firstItem="Mr1-1y-7aB" firstAttribute="top" secondItem="pZD-pc-0RA" secondAttribute="bottom" constant="20" id="sPv-Yv-J7e"/>
+                            <constraint firstItem="Mr1-1y-7aB" firstAttribute="top" secondItem="a1P-3x-7Gl" secondAttribute="bottom" constant="20" id="xQw-RC-Ksh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="appleTvOnButton" destination="LBj-Pb-dII" id="QEa-KJ-2hK"/>
+                        <outlet property="appleTvSwitchButton" destination="0yK-eA-7So" id="NfZ-BT-bc3"/>
+                        <outlet property="connectedLabel" destination="xjb-J8-Egs" id="Pls-EW-vYy"/>
+                        <outlet property="gameOnButton" destination="KgS-7U-Syr" id="BhN-Vn-RnZ"/>
+                        <outlet property="gameSwitchButton" destination="auz-uh-wPp" id="PqS-cd-4pM"/>
+                        <outlet property="menuButton" destination="dxF-gz-qyW" id="iiL-PV-iLk"/>
+                        <outlet property="playButton" destination="I3c-El-3zy" id="IhA-9Q-6ze"/>
+                        <outlet property="refreshButton" destination="Ko5-Fh-2U3" id="fDB-n2-Zd7"/>
+                        <outlet property="segmentedControl" destination="QkT-tz-QXG" id="Ru8-pB-Rzr"/>
+                        <outlet property="shutdownButton" destination="dtO-zF-Ihy" id="4gq-HW-AhD"/>
+                        <outlet property="textField" destination="NPx-nt-ECz" id="I6c-mF-1B6"/>
+                        <outlet property="textFieldBottomConstraint" destination="3CK-b2-vwW" id="ouE-P5-7UK"/>
+                        <outlet property="titleTopConstraint" destination="Wfp-cv-0wm" id="cO9-67-VVQ"/>
+                        <outlet property="touchpadButton" destination="a2R-Ih-xyB" id="m15-Ab-nPL"/>
+                        <outlet property="tvOnButton" destination="ZFN-8C-l91" id="xK3-Hn-Yxc"/>
+                        <outlet property="tvSwitchButton" destination="TIJ-kM-Ebc" id="0IK-0c-zXK"/>
+                        <outlet property="volumeDownButton" destination="rTP-AC-eCc" id="3gL-ec-hfq"/>
+                        <outlet property="volumeMuteButton" destination="Oxf-qC-tTT" id="ut5-WS-6yd"/>
+                        <outlet property="volumeUpButton" destination="ZJa-Hn-7fh" id="MI4-QB-Q8N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.10000000000000001" id="0bE-84-lek" userLabel="Volume Down Long Press Gesture Recognizer">
+                    <connections>
+                        <action selector="volumeDownButtonWasLongPressed:" destination="BYZ-38-t0r" id="xig-Lq-5VX"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.10000000000000001" id="UBL-30-Fqb" userLabel="Volume Up Long Press Gesture Recognizer">
+                    <connections>
+                        <action selector="volumeUpButtonWasLongPressed:" destination="BYZ-38-t0r" id="FqB-ja-dph"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="7ev-Fn-Xtm" userLabel="Touchpad Right Swipe Gesture Recognizer">
+                    <connections>
+                        <action selector="touchpadWasSwipedRight:" destination="BYZ-38-t0r" id="N3d-kd-88q"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="pD3-NY-Eej" userLabel="Touchpad Left Swipe Gesture Recognizer">
+                    <connections>
+                        <action selector="touchpadWasSwipedLeft:" destination="BYZ-38-t0r" id="hlB-eu-WeR"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="L2y-BU-E9O" userLabel="Touchpad Down Swipe Gesture Recognizer">
+                    <connections>
+                        <action selector="touchpadWasSwipedDown:" destination="BYZ-38-t0r" id="kyP-pg-v9R"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="up" id="5CA-mR-V1i" userLabel="Touchpad Up Swipe Gesture Recognizer">
+                    <connections>
+                        <action selector="touchpadWasSwipedUp:" destination="BYZ-38-t0r" id="JP4-XW-gem"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AppleTV-Color-Fill" width="46" height="46"/>
+        <image name="AppleTV-White" width="46" height="46"/>
+        <image name="Game-Color-Fill" width="50" height="50"/>
+        <image name="Game-White" width="50" height="50"/>
+        <image name="Refresh-White" width="23" height="24"/>
+        <image name="Shutdown-White" width="18" height="20"/>
+        <image name="TV-Color-Fill" width="50" height="48"/>
+        <image name="TV-White" width="50" height="49"/>
+        <image name="VolumeDown-White" width="37" height="44"/>
+        <image name="VolumeMute-White" width="44" height="44"/>
+        <image name="VolumeUp-White" width="51" height="44"/>
+    </resources>
+</document>
