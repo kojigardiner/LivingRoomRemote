@@ -463,9 +463,5 @@ class MainVC: UIViewController, BluetoothSerialDelegate, UITextFieldDelegate {
 //            usleep(100000)
 //        }
     }
-    
-//    override func prefersStatusBarHidden() -> Bool {
-//        return false
-//    }
 }
 
